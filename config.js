@@ -104,8 +104,25 @@ module.exports = {
     'comma-style': 'warn',
     'curly': 'warn',
     'jsx-quotes': ['warn', 'prefer-double'],
-    'quotes': ['warn', 'double', { 'avoidEscape': true }],
     'semi': ['warn', 'always'],
+
+    // There was a lot of back and forth regarding this one. At the time of
+    // decision, Tobira uses double quotes, Studio uses single quotes
+    // (except for JSX) and Editor uses both roughly equally often. Of course,
+    // it's fine for one of those projects to just override the rule. But we
+    // still need to set some default.
+    //
+    // In the end, we decided for "double" due to a number of reasons:
+    // - In JSX, double quotes are used almost all the time, as it mimics HTML.
+    //   So using different quotes is weird.
+    // - And while the JS ecosystem in general uses single quotes more often, in
+    //   projects using React, this is not necessarily the case, due to the JSX
+    //   reason mentioned above.
+    // - Further, JSON only allows double quotes, so this makes it easier to
+    //   copy and paste objects around.
+    // - Finally, there are actually quite a few style guides recommending
+    //   double quotes. So it's not that uncommon.
+    'quotes': ['warn', 'double', { 'avoidEscape': true }],
 
 
     // ----- Other rules ------------------------------------------------------
