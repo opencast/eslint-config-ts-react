@@ -99,7 +99,7 @@ module.exports = {
     'comma-style': 'warn',
     'curly': 'warn',
     'jsx-quotes': ['warn', 'prefer-double'],
-    'quotes': ['warn', 'single', { 'avoidEscape': true }],
+    'quotes': ['warn', 'double', { 'avoidEscape': true }],
     'semi': ['warn', 'always'],
 
 
