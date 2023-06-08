@@ -114,4 +114,22 @@ module.exports = {
       ignoreRestSiblings: true,
     }],
   },
+
+  overrides: [
+    // JS files should use the JS parser.
+    {
+      files: ["*.js"],
+      parser: "espree",
+      parserOptions: {
+        ecmaVersion: 11,
+      },
+
+      // Disable some TS specific rules. Unfortunately, I havn't found a way to
+      // easily disable all at once. But luckily there seem to be only a small
+      // number of rules that can actually get triggered in JS files.
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
 };
