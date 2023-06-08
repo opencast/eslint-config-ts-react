@@ -73,10 +73,13 @@ module.exports = {
     'indent': ['warn', 2, { 'SwitchCase': 1, 'MemberExpression': 'off' }],
 
     // Spacing
+    'array-bracket-spacing': 'warn',
     'arrow-spacing': 'warn',
     'block-spacing': ['warn', 'always'],
     'comma-spacing': 'warn',
+    'computed-property-spacing': 'warn',
     'func-call-spacing': ['warn', 'never'],
+    'key-spacing': 'warn',
     'keyword-spacing': 'warn',
     'no-multi-spaces': ['warn', { 'ignoreEOLComments': true }],
     'object-curly-spacing': ['warn', 'always'],
@@ -90,6 +93,8 @@ module.exports = {
     }],
     'space-in-parens': 'warn',
     'space-infix-ops': 'warn',
+    'space-unary-ops': 'warn',
+    'spaced-comment': 'warn',
 
     // Other style
     'arrow-parens': ['warn', 'as-needed'],
