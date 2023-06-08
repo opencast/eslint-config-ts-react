@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-ts-react",
+  "version": "0.1.0",
+  "description": "Shared ESLint configuration for TypeScript React projects",
+  "main": "config.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 8",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 4",
+    "@typescript-eslint/eslint-plugin": ">= 5"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.59.9"
+  }
+}
