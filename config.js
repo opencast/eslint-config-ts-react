@@ -83,7 +83,11 @@ module.exports = {
     'react/jsx-curly-spacing': 'warn',
     'semi-spacing': 'warn',
     'space-before-blocks': 'warn',
-    'space-before-function-paren': ['warn', 'never'],
+    'space-before-function-paren': ['warn', {
+        'named': 'never',
+        'anonymous': 'always',
+        'asyncArrow': 'always',
+    }],
     'space-in-parens': 'warn',
     'space-infix-ops': 'warn',
 
