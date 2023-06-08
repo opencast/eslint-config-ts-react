@@ -49,6 +49,16 @@ module.exports = {
     // We don't use prop types, TypeScript fills that role for us.
     'react/prop-types': 'off',
 
+    // Would warn about anonymous functions definining components as React uses
+    // that for debugging. But not that important for us.
+    'react/display-name': 'off',
+
+    // The reasoning is that empty functions can be a sign of bug and are weird
+    // enough to at least warrent a comment. But the comment could be a few
+    // lines above and sometimes the purpose of the empty function (usually as
+    // default) is evident from context.
+    '@typescript-eslint/no-empty-function': 'off',
+
 
     // ----- Style rules ------------------------------------------------------
 
