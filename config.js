@@ -44,7 +44,7 @@ module.exports = {
     // just come out of nowhere, so let's tell ESLint not to complain about
     // it.
     'react/react-in-jsx-scope': 'off',
-    'react/no-unknown-property': ['error', { 'ignore': ['css'] }],
+    'react/no-unknown-property': ['warn', { 'ignore': ['css'] }],
 
     // We don't use prop types, TypeScript fills that role for us.
     'react/prop-types': 'off',
@@ -69,7 +69,7 @@ module.exports = {
     'no-trailing-spaces': 'warn',
 
     // Indentation
-    'no-tabs': 'error',
+    'no-tabs': 'warn',
     'indent': ['warn', 2, { 'SwitchCase': 1, 'MemberExpression': 'off' }],
 
     // Spacing
