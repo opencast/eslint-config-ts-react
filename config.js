@@ -79,7 +79,7 @@ module.exports = {
     'func-call-spacing': ['warn', 'never'],
     'keyword-spacing': 'warn',
     'no-multi-spaces': ['warn', { 'ignoreEOLComments': true }],
-    'object-curly-spacing': ['warn', 'always', { 'arraysInObjects': false, 'objectsInObjects': false }],
+    'object-curly-spacing': ['warn', 'always'],
     'react/jsx-curly-spacing': 'warn',
     'semi-spacing': 'warn',
     'space-before-blocks': 'warn',
