@@ -94,7 +94,7 @@ module.exports = {
     // Other style
     'arrow-parens': ['warn', 'as-needed'],
     'brace-style': ['warn', '1tbs', { 'allowSingleLine': true }],
-    'comma-dangle': ['warn', 'only-multiline'],
+    'comma-dangle': ['warn', 'always-multiline'],
     'comma-style': 'warn',
     'curly': 'warn',
     'jsx-quotes': ['warn', 'prefer-double'],
