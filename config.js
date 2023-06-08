@@ -99,7 +99,6 @@ module.exports = {
     'curly': 'warn',
     'jsx-quotes': ['warn', 'prefer-double'],
     'quotes': ['warn', 'single', { 'avoidEscape': true }],
-    'react/jsx-pascal-case': 'off',
     'semi': ['warn', 'always'],
 
 
