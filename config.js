@@ -16,10 +16,15 @@ module.exports = {
     // "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
 
-  "settings": {
-    "react": {
-      "version": "detect",
+  settings: {
+    react: {
+      version: "detect",
     },
+  },
+
+  env: {
+    browser: true,
+    es6: true,
   },
 
   // Specify rules.
