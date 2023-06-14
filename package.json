@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-ts-react",
+  "name": "@opencast/eslint-config-ts-react",
   "version": "0.1.0",
   "description": "Shared ESLint configuration for TypeScript React projects",
   "main": "config.js",
