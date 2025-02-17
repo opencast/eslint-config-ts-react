@@ -11,13 +11,16 @@ Run:
 npm install --save-dev @opencast/eslint-config-ts-react
 ```
 
-And add this to your ESLint config (e.g. `.eslintrc.js`):
+And add this to your ESLint config (e.g. `eslint.config.js`):
 
 ```javascript
-{
-    extends: ["@opencast/eslint-config-ts-react"],
-    // ...
-}
+import opencastConfig from "@opencast/eslint-config-ts-react";
+
+export default [
+  ...opencastConfig,
+
+  // ... your other configs
+];
 ```
 
 Also make sure you already have `eslint` and all other [`peerDependencies` of this configuration](./package.json) in your `package.json`.

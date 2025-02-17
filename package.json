@@ -5,13 +5,13 @@
   "repository": "github:opencast/eslint-config-ts-react",
   "license": "CC0-1.0",
   "main": "config.js",
+  "type": "module",
   "peerDependencies": {
-    "eslint": ">= 8",
-    "eslint-plugin-react": ">= 7",
-    "eslint-plugin-react-hooks": ">= 4",
-    "@typescript-eslint/eslint-plugin": ">= 6"
+    "eslint": ">=9"
   },
   "dependencies": {
-    "@typescript-eslint/parser": ">= 6"
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "typescript-eslint": "^8.24.0"
   }
 }
