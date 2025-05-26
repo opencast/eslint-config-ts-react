@@ -49,22 +49,22 @@ export default [
     // be a warning. In many situations (e.g. webpack-dev-server), errors are
     // presented to the dev more directly and annoyingly than warnings. It is
     // important that the linter does not unnecessarily disrupt the dev
-    // workflow. For example, an unused variable shouldn"t lead to a big popup
+    // workflow. For example, an unused variable shouldn't lead to a big popup
     // over your web app every time; unused variables exist temporarily during
     // development all the time. So nothing that can just happen temporarily
     // during development should be an error. We expect all downstream projects
-    // to fail CI if any lint warning is produced anyway, and that"s the
+    // to fail CI if any lint warning is produced anyway, and that's the
     // important thing here.
     rules: {
       // ----- Disabling some rules ---------------------------------------------
 
       // Using emotion.js and a proper config, the JSX factory and the `css` prop
-      // just come out of nowhere, so let"s tell ESLint not to complain about
+      // just come out of nowhere, so let's tell ESLint not to complain about
       // it.
       "react/react-in-jsx-scope": "off",
       "react/no-unknown-property": ["warn", { "ignore": ["css"] }],
 
-      // We don"t use prop types, TypeScript fills that role for us.
+      // We don't use prop types, TypeScript fills that role for us.
       "react/prop-types": "off",
 
       // Would warn about anonymous functions definining components as React uses
@@ -72,7 +72,7 @@ export default [
       "react/display-name": "off",
 
       // The reasoning is that empty functions can be a sign of bug and are weird
-      // enough to at least warrent a comment. But the comment could be a few
+      // enough to at least warrant a comment. But the comment could be a few
       // lines above and sometimes the purpose of the empty function (usually as
       // default) is evident from context.
       "@typescript-eslint/no-empty-function": "off",
@@ -127,7 +127,7 @@ export default [
       // There was a lot of back and forth regarding this one. At the time of
       // decision, Tobira uses double quotes, Studio uses single quotes
       // (except for JSX) and Editor uses both roughly equally often. Of course,
-      // it"s fine for one of those projects to just override the rule. But we
+      // it's fine for one of those projects to just override the rule. But we
       // still need to set some default.
       //
       // In the end, we decided for "double" due to a number of reasons:
@@ -139,7 +139,7 @@ export default [
       // - Further, JSON only allows double quotes, so this makes it easier to
       //   copy and paste objects around.
       // - Finally, there are actually quite a few style guides recommending
-      //   double quotes. So it"s not that uncommon.
+      //   double quotes. So it's not that uncommon.
       "quotes": ["warn", "double", { "avoidEscape": true }],
 
 
@@ -165,7 +165,7 @@ export default [
     // //   ecmaVersion: 11,
     // // },
 
-    // // Disable some TS specific rules. Unfortunately, I havn"t found a way to
+    // // Disable some TS-specific rules. Unfortunately, I haven't found a way to
     // // easily disable all at once. But luckily there seem to be only a small
     // // number of rules that can actually get triggered in JS files.
     // rules: {
